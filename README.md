@@ -8,7 +8,7 @@ Do We Always Need UCB in Diversity-Aware Multi-Armed Bandits?**
 The code implements Mixture-Greedy, a simple online mixture-selection algorithm for choosing among multiple generative models under diversity-aware evaluation objectives. Unlike Mixture-UCB methods, Mixture-Greedy optimizes the empirical mixture objective directly, without adding an explicit UCB exploration bonus. 
 
 <p align="center">
-  <img src="FID.pdf" width="900">
+  <img src="Mixture-Greedy.png" width="900">
 </p>
 
 ## Abstract
