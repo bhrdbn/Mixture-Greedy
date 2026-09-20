@@ -3,7 +3,9 @@
 This repository contains the official implementation for:
 
 **Mixture-Greedy for Online Generative Model Selection:  
-Do We Always Need UCB in Diversity-Aware Multi-Armed Bandits?**
+Do We Always Need UCB in Diversity-Aware Multi-Armed Bandits?, UAI 2026**
+
+[Read the paper (PDF)](https://arxiv.org/abs/2603.21716)
 
 The code implements Mixture-Greedy, a simple online mixture-selection algorithm for choosing among multiple generative models under diversity-aware evaluation objectives. Unlike Mixture-UCB methods, Mixture-Greedy optimizes the empirical mixture objective directly, without adding an explicit UCB exploration bonus. 
 
