@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mixture-greedy"
+version = "0.1.0"
+description = "Online mixture selection for generative-model evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "cvxpy>=1.3",
+    "matplotlib>=3.7",
+    "numpy>=1.24",
+    "scikit-learn>=1.3",
+    "scipy>=1.10",
+    "torch>=2.0",
+]
+
+[project.scripts]
+mixture-greedy = "mixture_greedy.__main__:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools]
+py-modules = [
+    "FID_online",
+    "VNE_online_new",
+    "main",
+    "offline_mixture",
+    "online_reproducible",
+]
+
+[tool.setuptools.packages.find]
+include = ["mixture_greedy*"]
+
+[tool.pytest.ini_options]
+addopts = "--strict-markers --strict-config"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+exclude = [
+    "stylegan2-ada-pytorch",
+    "methods",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# Legacy research scripts are compatibility surfaces and will be migrated in
+# stages. New package code and tests are held to the full rule set.
+"FID_online.py" = ["E", "F", "I", "UP", "B"]
+"VNE_online_new.py" = ["E", "F", "I", "UP", "B"]
+"main.py" = ["E", "F", "I", "UP", "B"]
+"offline_mixture.py" = ["E", "F", "I", "UP", "B"]
+"online_reproducible.py" = ["E", "F", "I", "UP", "B"]
