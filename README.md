@@ -277,3 +277,15 @@ The refactor preserves:
 Apparent numerical or control-flow defects are intentionally not changed in a
 behavior-preserving commit. Such fixes should be proposed separately with a
 specific regression test and migration note.
+
+
+## Paper
+
+[Read the paper (PDF)](https://arxiv.org/abs/2603.21716)
+
+@article{nia2026exploration,
+  title={When Exploration Comes for Free with Mixture-Greedy: Do we need UCB in Diversity-Aware Multi-Armed Bandits?},
+  author={Nia, Bahar Dibaei and Farnia, Farzan},
+  journal={arXiv preprint arXiv:2603.21716},
+  year={2026}
+}
