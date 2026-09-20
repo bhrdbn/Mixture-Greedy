@@ -33,3 +33,5 @@ Mixture-Greedy maintains a mixture distribution over a set of generators. At eac
 
 ```math
 \alpha_t \in \arg\min_{\alpha \in \Delta_m} \widehat{L}_{t-1}(\alpha),
+
+In this work, we proved that diversity-aware objectives for mixture selection induce implicit exploration without requiring an explicit exploration bonus.
