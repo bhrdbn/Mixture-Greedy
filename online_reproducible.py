@@ -1,4 +1,3 @@
-"""Backward-compatible facade for the modular RKE/KID implementation."""
 
 import os
 
@@ -11,8 +10,8 @@ from mixture_greedy.data.features import (
     _load_features_from_npz,
     _resolve_existing_path,
 )
-from mixture_greedy.evaluators.rke_offline import RKEOfflineEvaluator
-from mixture_greedy.evaluators.rke_online import RKEOnlineEvaluator
+from mixture_greedy.rke_offline import RKEOfflineEvaluator
+from mixture_greedy.rke_online import RKEOnlineEvaluator
 from mixture_greedy.metrics.convergence import alpha_convergence
 from mixture_greedy.metrics.distances import compute_pairwise_distance
 from mixture_greedy.metrics.rke import (
