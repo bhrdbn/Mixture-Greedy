@@ -280,9 +280,7 @@ behavior-preserving commit. Such fixes should be proposed separately with a
 specific regression test and migration note.
 
 
-## Paper
-
-[Read the paper (PDF)](https://arxiv.org/abs/2603.21716)
+## Cite our work
 
 @article{nia2026exploration,
   title={When Exploration Comes for Free with Mixture-Greedy: Do we need UCB in Diversity-Aware Multi-Armed Bandits?},
